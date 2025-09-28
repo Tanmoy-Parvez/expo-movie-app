@@ -43,6 +43,12 @@ export default function Search() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchQuery]);
 
+  // useEffect(() => {
+  //   if (movies?.length! > 0 && movies?.[0]) {
+  //     updateSearchCount(searchQuery, movies[0]);
+  //   }
+  // }, [movies, searchQuery]);
+
   return (
     <View className="flex-1 bg-primary">
       <Image source={images.bg} className="absolute w-full z-0" />
